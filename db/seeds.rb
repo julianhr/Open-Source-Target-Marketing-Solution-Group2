@@ -5,12 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-ActiveSupport::Base.transaction do
+Geoid2010.transaction do
   ActiveSupport::JSON.decode(File.read('localData/10.json')).each do |a|
     Geoid2010.create!(a)
   end
+end
 
-  # ActiveSupport::JSON.decode(File.read('localData/dataMap.json')).each do |a|
-  #   Demographic.create!(a)
-  # end
+Demographic.transaction do
+  ActiveSupport::JSON.decode(File.read('localData/localData.txt')).each do |a|
+    Demographic.create!({'data': a})
+  end
 end

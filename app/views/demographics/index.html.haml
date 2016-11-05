@@ -1,0 +1,21 @@
+%h1 Listing demographics
+
+%table
+  %thead
+    %tr
+      %th Data
+      %th
+      %th
+      %th
+
+  %tbody
+    - @demographics.each do |demographic|
+      %tr
+        %td= demographic.data
+        %td= link_to 'Show', demographic
+        %td= link_to 'Edit', edit_demographic_path(demographic)
+        %td= link_to 'Destroy', demographic, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Demographic', new_demographic_path

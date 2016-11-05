@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Data:
+  = @demographic.data
+
+= link_to 'Edit', edit_demographic_path(@demographic)
+\|
+= link_to 'Back', demographics_path
