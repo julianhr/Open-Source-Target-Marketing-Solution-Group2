@@ -15,4 +15,22 @@ ActiveRecord::Schema.define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "geoid_meta", id: false, force: :cascade do |t|
+    t.integer "land_area_2010"
+    t.integer "water_area_2010"
+    t.string  "block_id_2010",   limit: 4
+    t.string  "county_id_2010",  limit: 3
+    t.string  "funcstat_2010",   limit: 1
+    t.string  "id",              limit: 15
+    t.float   "lat_2010"
+    t.float   "lon_2010"
+    t.string  "mtfcc_2010",      limit: 5
+    t.string  "name_2010",       limit: 10
+    t.string  "state_id_2010",   limit: 2
+    t.string  "tract_id_2010",   limit: 6
+    t.string  "uace_2010",       limit: 5
+    t.string  "uatype_2010",     limit: 1
+    t.string  "ur_2010",         limit: 1
+  end
+
 end
