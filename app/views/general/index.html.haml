@@ -1,2 +1,28 @@
-%h1 General#index
-%p Find me in app/views/general/index.html.haml
+.off-canvas-wrapper
+  .off-canvas-wrapper-inner{'data-off-canvas-wrapper': true}
+    .off-canvas.position-left#offCanvas{'data-off-canvas': true}
+      %button.close-button{'aria-label': 'Close menu', type: 'button', 'data-close': true}
+        %span{'aria-hidden': 'true'} &times;
+      %h3 Select Attributes
+      %ul.vertical.menu
+        %li
+          %a{:href => "#"} Testing
+        %li
+          %a{:href => "#"} Testing
+        %li
+          %a{:href => "#"} Testing
+        %li
+          %a{:href => "#"} Testing
+    .off-canvas-content{'data-off-canvas-content': true}
+      .row
+        .large-12
+          Testing the background
+          Testing the background
+          Testing the background
+          Testing the background
+          Testing the background
+          Testing the background
+          Testing the background
+      .row
+        .large-12
+          %button.button{type: 'button', data:{toggle: 'offCanvas'}} Open menu

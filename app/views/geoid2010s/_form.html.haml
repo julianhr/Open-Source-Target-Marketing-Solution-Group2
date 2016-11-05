@@ -1,0 +1,55 @@
+= form_for @geoid2010 do |f|
+  - if @geoid2010.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@geoid2010.errors.count, "error")} prohibited this geoid2010 from being saved:"
+      %ul
+        - @geoid2010.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :land_area
+    = f.number_field :land_area
+  .field
+    = f.label :water_area
+    = f.number_field :water_area
+  .field
+    = f.label :block_id
+    = f.text_field :block_id
+  .field
+    = f.label :county_id
+    = f.text_field :county_id
+  .field
+    = f.label :funcstat
+    = f.text_field :funcstat
+  .field
+    = f.label :geoid_id
+    = f.text_field :geoid_id
+  .field
+    = f.label :lat
+    = f.text_field :lat
+  .field
+    = f.label :lon
+    = f.text_field :lon
+  .field
+    = f.label :mtfcc
+    = f.text_field :mtfcc
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :state_id
+    = f.text_field :state_id
+  .field
+    = f.label :tract_id
+    = f.text_field :tract_id
+  .field
+    = f.label :uace
+    = f.text_field :uace
+  .field
+    = f.label :uatype
+    = f.text_field :uatype
+  .field
+    = f.label :ur
+    = f.text_field :ur
+  .actions
+    = f.submit 'Save'

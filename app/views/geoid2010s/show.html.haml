@@ -1,0 +1,51 @@
+%p#notice= notice
+
+%p
+  %b Land area:
+  = @geoid2010.land_area
+%p
+  %b Water area:
+  = @geoid2010.water_area
+%p
+  %b Block:
+  = @geoid2010.block_id
+%p
+  %b County:
+  = @geoid2010.county_id
+%p
+  %b Funcstat:
+  = @geoid2010.funcstat
+%p
+  %b Geoid:
+  = @geoid2010.geoid_id
+%p
+  %b Lat:
+  = @geoid2010.lat
+%p
+  %b Lon:
+  = @geoid2010.lon
+%p
+  %b Mtfcc:
+  = @geoid2010.mtfcc
+%p
+  %b Name:
+  = @geoid2010.name
+%p
+  %b State:
+  = @geoid2010.state_id
+%p
+  %b Tract:
+  = @geoid2010.tract_id
+%p
+  %b Uace:
+  = @geoid2010.uace
+%p
+  %b Uatype:
+  = @geoid2010.uatype
+%p
+  %b Ur:
+  = @geoid2010.ur
+
+= link_to 'Edit', edit_geoid2010_path(@geoid2010)
+\|
+= link_to 'Back', geoid2010s_path
