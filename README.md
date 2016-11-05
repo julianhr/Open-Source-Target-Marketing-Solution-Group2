@@ -2,7 +2,7 @@
 
 This README would normally document whatever steps are necessary to get the application up and running.
 
-Things you may want to cover:
+Dockerfile can shortcut these steps.
 
 ## Ruby version
 
@@ -16,6 +16,11 @@ install postgresql
 
 - brew install postgresql
 - apt-get ...
+
+install dependencies
+
+- gem install bundler
+- bundle install
 
 ## Configuration
 
