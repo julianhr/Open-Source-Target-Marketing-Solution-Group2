@@ -1,3 +1,26 @@
 // Place all the styles related to the General controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#general-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+  }
+}
+
+#map {
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

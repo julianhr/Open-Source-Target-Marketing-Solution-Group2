@@ -1,28 +1,21 @@
-.off-canvas-wrapper
-  .off-canvas-wrapper-inner{'data-off-canvas-wrapper': true}
-    .off-canvas.position-left#offCanvas{'data-off-canvas': true}
-      %button.close-button{'aria-label': 'Close menu', type: 'button', 'data-close': true}
-        %span{'aria-hidden': 'true'} &times;
-      %h3 Select Attributes
-      %ul.vertical.menu
-        %li
-          %a{:href => "#"} Testing
-        %li
-          %a{:href => "#"} Testing
-        %li
-          %a{:href => "#"} Testing
-        %li
-          %a{:href => "#"} Testing
-    .off-canvas-content{'data-off-canvas-content': true}
-      .row
-        .large-12
-          Testing the background
-          Testing the background
-          Testing the background
-          Testing the background
-          Testing the background
-          Testing the background
-          Testing the background
-      .row
-        .large-12
-          %button.button{type: 'button', data:{toggle: 'offCanvas'}} Open menu
+:plain
+  <script>
+    var map, heatmap;
+    function initMap() {
+      console.log("Starting up");
+ 
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 9,
+        maxZoom: 16,     
+        center: {lat: 39.1186153, lng: -75.5822},
+        mapTypeId: 'roadmap'
+      });
+    }
+  </script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-NT495urHbTOwF35xByjRnIlTYryQ_kk&libraries=visualization&callback=initMap">
+  </script>
+#map
+%div#menu
+  %button.close-button{'aria-label': 'Close menu', type: 'button', 'data-close': true}
+    Open

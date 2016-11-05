@@ -35,8 +35,6 @@ gem 'jbuilder', '~> 2.5'
 # Haml (HTML Abstraction Markup Language)
 gem 'haml-rails'
 # ZURB Foundation on Sass/Compass
-gem 'foundation-rails'
-# Flexible authentication solution for Rails with Warden
 gem 'devise'
 
 group :development, :test do
