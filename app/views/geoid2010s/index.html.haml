@@ -1,0 +1,49 @@
+%h1 Listing geoid2010s
+
+%table
+  %thead
+    %tr
+      %th Land area
+      %th Water area
+      %th Block
+      %th County
+      %th Funcstat
+      %th Geoid
+      %th Lat
+      %th Lon
+      %th Mtfcc
+      %th Name
+      %th State
+      %th Tract
+      %th Uace
+      %th Uatype
+      %th Ur
+      %th
+      %th
+      %th
+
+  %tbody
+    - @geoid2010s.each do |geoid2010|
+      %tr
+        %td= geoid2010.land_area
+        %td= geoid2010.water_area
+        %td= geoid2010.block_id
+        %td= geoid2010.county_id
+        %td= geoid2010.funcstat
+        %td= geoid2010.geoid_id
+        %td= geoid2010.lat
+        %td= geoid2010.lon
+        %td= geoid2010.mtfcc
+        %td= geoid2010.name
+        %td= geoid2010.state_id
+        %td= geoid2010.tract_id
+        %td= geoid2010.uace
+        %td= geoid2010.uatype
+        %td= geoid2010.ur
+        %td= link_to 'Show', geoid2010
+        %td= link_to 'Edit', edit_geoid2010_path(geoid2010)
+        %td= link_to 'Destroy', geoid2010, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Geoid2010', new_geoid2010_path

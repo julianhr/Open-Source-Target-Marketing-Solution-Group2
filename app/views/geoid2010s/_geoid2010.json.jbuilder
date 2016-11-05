@@ -1,0 +1,2 @@
+json.extract! geoid2010, :id, :land_area, :water_area, :block_id, :county_id, :funcstat, :geoid_id, :lat, :lon, :mtfcc, :name, :state_id, :tract_id, :uace, :uatype, :ur, :created_at, :updated_at
+json.url geoid2010_url(geoid2010, format: :json)
