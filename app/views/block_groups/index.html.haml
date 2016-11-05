@@ -1,0 +1,23 @@
+%h1 Listing block_groups
+
+%table
+  %thead
+    %tr
+      %th Properties
+      %th Value
+      %th
+      %th
+      %th
+
+  %tbody
+    - @block_groups.each do |block_group|
+      %tr
+        %td= block_group.properties
+        %td= block_group.value
+        %td= link_to 'Show', block_group
+        %td= link_to 'Edit', edit_block_group_path(block_group)
+        %td= link_to 'Destroy', block_group, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Block group', new_block_group_path

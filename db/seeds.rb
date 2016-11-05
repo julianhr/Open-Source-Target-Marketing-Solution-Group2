@@ -11,6 +11,12 @@ Geoid2010.transaction do
   end
 end
 
+BlockGroup.transaction do
+  ActiveSupport::JSON.decode(File.read('localData/median2out.json')).each do |a|
+    BlockGroup.create!(a)
+  end
+end
+
 Demographic.transaction do
   ActiveSupport::JSON.decode(File.read('localData/localData.txt')).each do |a|
     Demographic.create!({'data': a})

@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Properties:
+  = @block_group.properties
+%p
+  %b Value:
+  = @block_group.value
+
+= link_to 'Edit', edit_block_group_path(@block_group)
+\|
+= link_to 'Back', block_groups_path

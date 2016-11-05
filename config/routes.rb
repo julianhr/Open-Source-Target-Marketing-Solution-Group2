@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :block_groups
   resources :demographics
   resources :geoid2010s
   get 'general/index'
