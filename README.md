@@ -4,21 +4,30 @@ This README would normally document whatever steps are necessary to get the appl
 
 Things you may want to cover:
 
-- Ruby version
+## Ruby version
 
-- System dependencies
+tested with
 
-- Configuration
+- ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
 
-- Database creation
+## System dependencies
 
-- Database initialization
+install postgresql
 
-- How to run the test suite
+- brew install postgresql
+- apt-get ...
 
-- Services (job queues, cache servers, search engines, etc.)
+## Configuration
 
-- Deployment instructions
+## Database creation
+
+## Database initialization
+
+## How to run the test suite
+
+## Services (job queues, cache servers, search engines, etc.)
+
+## Deployment instructions
 
 ## Challenge #1: Open Source Target Marketing Solution (Open Data Delaware)
 
